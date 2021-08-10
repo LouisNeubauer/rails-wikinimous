@@ -1,10 +1,13 @@
+
 <h1>Wikinimous Articles</h1>
 <ul>
   <% @articles.each do |article| %>
-    <li>
+    <li class="link">
     <%= link_to article.title, show_path(article) %>
     </li>
   <% end %>
 </ul>
 
+<div class = "footer">
 <%= link_to "create new article", new_path %>
+</div>
